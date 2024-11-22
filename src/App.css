@@ -1,0 +1,93 @@
+.loginlink {
+  display: inline-block;  
+  color: whitesmoke;
+}
+
+/* Product Grid */
+.product-grid {
+  display:flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap; 
+  /* background-color: pink; */
+  /* justify-content: space-between; */
+  padding: 20px; 
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+/* Product Card */
+.product-card {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust width for 3 cards per row with 20px gap */
+  max-width: calc(26.33% - 20px); /* Adjust max-width for 3 cards per row with 20px gap */
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  margin-right: 20px;
+  
+  gap: 20px;
+}
+
+/* Pseudo-classes - Hover effect on product button */
+.product-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}; 
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem; 
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
